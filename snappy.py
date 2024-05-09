@@ -58,7 +58,7 @@ def write_to_yaml(data, filename="output.yaml"):
 with open("urlSecret", "r") as file:
     url = file.read().strip()
 
-print(f"Thank you for choosing Snippy! Now scraping for URL: {url}!\n\n")
+logging.info(f"Thank you for choosing Snippy! Now scraping for URL: {url}!\n\n")
 
 # Scrape the product titles and write the results to YAML
 product_titles = scrape_product_titles(url)
