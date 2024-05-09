@@ -2,19 +2,23 @@
 
 ## Overview
 
-The Snippy Scraper is a Python script designed to extract product titles from dynamically generated web pages using Selenium. This project addresses the challenge of scraping content loaded via JavaScript, which traditional scraping tools like BeautifulSoup cannot handle. The output is saved in a neatly formatted YAML file.
+The Snippy Scraper is a Python script designed to extract product titles from Snappy Gifts (snappy.com) web pages using Selenium. This project addresses the challenge of scraping content loaded via JavaScript, which traditional scraping tools like BeautifulSoup cannot handle. The output is saved in a neatly formatted YAML file.
 
 ## Features
 
-Dynamic Web Page Handling: Uses Selenium to interact with and extract data from JavaScript-heavy web pages.
-Automatic WebDriver Management: Utilizes webdriver-manager to handle browser driver requirements automatically.
-YAML Output: Structures the extracted data into a YAML file for easy use and integration with other systems.
+- Dynamic Web Page Handling: 
+    - Uses Selenium to interact with and extract data from JavaScript-heavy web pages.
+- Automatic WebDriver Management:
+    - Utilizes webdriver-manager to handle browser driver requirements automatically.
+- YAML Output:
+    - Structures the extracted data into a YAML file for easy use and integration with other systems.
 
 ## Installation
 ### Prerequisites
-Python 3.x
-pip
-Chrome Browser (or any other browser of your choice but ensure you have the corresponding WebDriver)
+- Python 3.x
+- pip
+- Chrome Browser (or any other browser of your choice but make sure you have the corresponding WebDriver!)
+- A valid snappy gifts URL
 
 ### Setup
 Clone the Repository:
@@ -27,6 +31,8 @@ Clone the Repository:
 ### Set Up URL Secret:
 Edit the file named `urlSecret.txt` in the project root.
 Add the URL of the page you want to scrape to this file.
+This URL should look something like the following:
+`https://web.snappygifts.com/choose/<Random Alphanumeric string>`
 
 ### (Optional) ChromeDriver Setup:
 If you prefer not to use webdriver-manager, manually download ChromeDriver and specify the path in `chromedriverPath.txt`.
