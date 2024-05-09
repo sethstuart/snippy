@@ -17,7 +17,7 @@ def scrape_product_titles(url):
     options.headless = True  # Enable headless mode for automation
 
     # Set the driver manually here:
-    # with open("chromedriverPath", "r") as file:
+    # with open("chromedriverPath.txt", "r") as file:
     #   driverPath = file.read().strip()
     #   logging.info(f"Attempting to use driver at specified path: {driverPath}")
     # service = Service(driverPath)  # Path to Chromedriver
@@ -55,7 +55,7 @@ def write_to_yaml(data, filename="output.yaml"):
     logging.info(f"Data written to {filename}")
 
 # Read URL from the urlSecret file
-with open("urlSecret", "r") as file:
+with open("urlSecret.txt", "r") as file:
     url = file.read().strip()
 
 logging.info(f"Thank you for choosing Snippy! Now scraping for URL: {url}!\n\n")
